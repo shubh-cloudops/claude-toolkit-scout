@@ -33,7 +33,7 @@ Choose only the categories this project actually needs, from:
 
 ## Step 3: Find candidates
 
-For each category, run several web searches and collect 5–10 candidates. Good places to look:
+For each category, run several web searches and collect 5-10 candidates. Good places to look:
 
 - GitHub (repo pages, topics, "awesome-" lists)
 - VS Code Marketplace
@@ -56,13 +56,13 @@ How to read the numbers reliably:
 
 | Category | Source | Minimum to pass |
 |---|---|---|
-| GitHub repo / open-source tool | GitHub repo page + /releases | ≥1,000 stars, commit or release in last 6 months, not archived, has a licence |
-| VS Code extension | VS Code Marketplace | ≥100k installs, updated in last 12 months, AND either rating ≥4.5 from ≥100 ratings OR the official extension of the tool's vendor with ≥1M installs |
-| Claude skill or plugin | Anthropic repo/marketplace or its GitHub repo | Official Anthropic or tool-vendor source (e.g. hashicorp/agent-skills), OR ≥500 stars and commit in last 6 months |
-| MCP server | MCP registry + GitHub repo | In the registry or vendor-published, plus ≥500 stars and commit in last 6 months |
-| Package | npmjs.com / pypistats.org | ≥100k weekly downloads (npm) or ≥1M monthly (PyPI), release in last 12 months |
-| Terraform provider / module | Terraform Registry | Official or Partner tier, OR ≥1M downloads, release in last 12 months |
-| SaaS / paid product | G2 or Capterra | ≥4.5 from ≥50 reviews, and a free tier or trial |
+| GitHub repo / open-source tool | GitHub repo page + /releases | >=1,000 stars, commit or release in last 6 months, not archived, has a licence |
+| VS Code extension | VS Code Marketplace | >=100k installs, updated in last 12 months, AND either rating >=4.5 from >=100 ratings OR the official extension of the tool's vendor with >=1M installs |
+| Claude skill or plugin | Anthropic repo/marketplace or its GitHub repo | Official Anthropic or tool-vendor source (e.g. hashicorp/agent-skills), OR >=500 stars and commit in last 6 months |
+| MCP server | MCP registry + GitHub repo | In the registry or vendor-published, plus >=500 stars and commit in last 6 months |
+| Package | npmjs.com / pypistats.org | >=100k weekly downloads (npm) or >=1M monthly (PyPI), release in last 12 months |
+| Terraform provider / module | Terraform Registry | Official or Partner tier, OR >=1M downloads, release in last 12 months |
+| SaaS / paid product | G2 or Capterra | >=4.5 from >=50 reviews, and a free tier or trial |
 
 Community check (all categories): at least one positive, specific recommendation on Hacker News or Reddit in the last 2 years, and no well-upvoted thread calling it broken, abandoned or unsafe. Put the name in quotes and add a topic word (e.g. `"checkov" terraform`), and ignore hits about something else with the same name.
 
@@ -70,7 +70,7 @@ Safety check (all categories): search `<name> security incident` and `<name> CVE
 
 ## Step 5: Gate 2, judgement score
 
-For candidates that passed Gate 1, read reviews, open issues and community threads. Score 1–5:
+For candidates that passed Gate 1, read reviews, open issues and community threads. Score 1-5:
 
 | Criterion | 5 means |
 |---|---|
@@ -80,9 +80,9 @@ For candidates that passed Gate 1, read reviews, open issues and community threa
 | Docs | Clear getting-started guide, works on the user's OS |
 | Safety | No known security incidents, sensible permissions, reputable publisher |
 
-Pass = average ≥4.0 and no criterion below 3.
+Pass = average >=4.0 and no criterion below 3.
 
-Rating label: **Excellent** if average ≥4.5, **Very good** if 4.0–4.4. Nothing else is shown.
+Rating label: **Excellent** if average >=4.5, **Very good** if 4.0-4.4. Nothing else is shown.
 
 ## Step 6: Output
 
@@ -95,14 +95,14 @@ Use this format for each category:
 
 | # | Name | What it does for this project | Rating | Evidence |
 |---|------|-------------------------------|--------|----------|
-| 1 | [Name](link) | One line | Excellent (4.6) | 12.3k ★, last commit 2026-10-01; Marketplace 4.7 (2.1k ratings) |
+| 1 | [Name](link) | One line | Excellent (4.6) | 12.3k stars, last commit 2026-10-01; Marketplace 4.7 (2.1k ratings) |
 
 Why #1: one line.
 ```
 
 End with:
 
-1. **Start here**: the 3–5 picks to install first, in order.
+1. **Start here**: the 3-5 picks to install first, in order.
 2. **Rejected (notable)**: up to 5 well-known names that failed, with the reason (e.g. "archived", "3.9 rating").
 3. **Checked on**: today's date. Note that ratings change over time.
 

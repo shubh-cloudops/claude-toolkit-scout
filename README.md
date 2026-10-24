@@ -26,7 +26,7 @@ Picks are labelled **Excellent** (≥4.5) or **Very good** (4.0–4.4). Nothing 
 
 ```powershell
 New-Item -ItemType Directory -Force "$HOME\.claude\skills\project-toolkit-scout"
-Invoke-WebRequest https://raw.githubusercontent.com/shubh-cloudops/claude-toolkit-scout/main/skill/SKILL.md -OutFile "$HOME\.claude\skills\project-toolkit-scout\SKILL.md"
+curl.exe -L https://raw.githubusercontent.com/shubh-cloudops/claude-toolkit-scout/main/skill/SKILL.md -o "$HOME\.claude\skills\project-toolkit-scout\SKILL.md"
 ```
 
 Expected result: running `/skills` in Claude Code lists `project-toolkit-scout`.
