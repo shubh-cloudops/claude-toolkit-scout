@@ -1,8 +1,12 @@
-# claude-toolkit-scout
+# Project Toolkit Scout: Claude Skill That Finds the Best Developer Tools, MCP Servers and VS Code Extensions
 
-A Claude skill that researches the web and recommends only **top-rated** tools, repos, VS Code extensions, Claude skills/plugins and MCP servers for any project, with a link and live evidence behind every number.
+![MIT license](https://img.shields.io/badge/license-MIT-blue.svg) ![Claude Code skill](https://img.shields.io/badge/Claude%20Code-skill-orange.svg)
+
+**Project Toolkit Scout is a free Claude skill that researches the web live and recommends only top-rated tools for your project.** Describe what you are building, and it returns the best developer tools, GitHub repos, VS Code extensions, Claude skills and plugins, and MCP servers for your stack. Every pick comes with a link and live evidence (GitHub stars, release dates, ratings, security incidents). It works in Claude Code and claude.ai.
 
 Example: describe "Terraform on Azure, beginner, Windows 11" and get back the top 3 picks per category, plus the well-known tools it rejected and why. In testing it rejected **Trivy** (38k ★) because of its March 2026 supply-chain compromise, which a simple star count would have missed.
+
+Also on the Agensi marketplace: [Project Toolkit Scout on Agensi](https://agensi.io/skills/project-toolkit-scout).
 
 ## How it decides
 
@@ -46,6 +50,20 @@ See [examples/test-results.md](examples/test-results.md) for a full run on 3 sam
 - Ratings change, so every report is dated.
 - Judgement scores come from Claude reading the evidence. They are a reasoned opinion, not ground truth.
 - Some sources (Reddit, the VS Code Marketplace average rating) may not be readable from AI web tools. The skill falls back as described in `SKILL.md`.
+
+## FAQ
+
+**How do I find the best MCP servers or VS Code extensions for my project?**
+Install this skill and ask Claude "Find the best tools for my project", with your stack, OS and skill level. It searches the MCP registry, VS Code Marketplace, GitHub and package registries, and keeps only picks that pass its quality gates.
+
+**Why not just use a "top 10 tools" list?**
+Blog lists are often outdated or sponsored. This skill checks every number live, on the source page, in the same run, and rejects tools with recent security incidents even when they are popular.
+
+**Does it need an API key or access to my files?**
+No. It only needs web search and web fetch in your agent. It does not read or write local files.
+
+**Which stacks does it support?**
+Any. It has been tested on Terraform on Azure, a Python web app and an AWS data pipeline (see [examples/test-results.md](examples/test-results.md)).
 
 ## Licence
 
